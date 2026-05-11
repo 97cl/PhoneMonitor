@@ -11,6 +11,7 @@ class UsageMonitorService : Service() {
     companion object {
         var isRunning = false
             private set
+        private const val TAG = "PhoneMonitor"
     }
 
     private val scope = CoroutineScope(Dispatchers.IO + SupervisorJob())
@@ -101,7 +102,5 @@ class UsageMonitorService : Service() {
         super.onDestroy()
     }
 
-    private companion object {
-        const val TAG = "PhoneMonitor"
-    }
+    
 }

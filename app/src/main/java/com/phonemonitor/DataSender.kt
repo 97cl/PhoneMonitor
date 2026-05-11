@@ -47,7 +47,7 @@ object DataSender {
                 val url = URL("$serverUrl/api/now")
                 val conn = url.openConnection() as HttpURLConnection
                 conn.requestMethod = "POST"
-                conn.setProperty("Content-Type", "application/json; charset=utf-8")
+                conn.setRequestProperty("Content-Type", "application/json; charset=utf-8")
                 conn.doOutput = true
                 conn.connectTimeout = 5_000
                 conn.readTimeout = 5_000

@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.PhoneMonitor" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryDark">#388E3C</item>
+        <item name="colorAccent">#FF5722</item>
+    </style>
+</resources>
